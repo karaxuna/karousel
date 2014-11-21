@@ -1,0 +1,29 @@
+<html>
+	<head></head>
+	<body>
+		<div>
+			<button onclick="previous()"> previous </button>
+			<div id="carousel"></div>
+			<button onclick="next()"> next </button>
+		</div>
+
+		<script type="text/javascript"> window.ns = {}; </script>
+		<script type="text/javascript" src="./libs/utils.js"></script>
+		<script type="text/javascript" src="./libs/Karousel.js"></script>
+
+		<script type="text/javascript">
+			var carousel = new ns.Karousel(document.getElementById('carousel'), [
+				'C:\\Users\\Karaxuna\\Desktop\\waterpolo.png',
+				'C:\\Users\\Karaxuna\\Desktop\\sharks.jpg'
+			]);
+
+			function previous(){
+				carousel.previous();
+			}
+
+			function next(){
+				carousel.next();
+			}
+		</script>
+	</body>
+</html>
